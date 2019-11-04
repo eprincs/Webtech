@@ -1,0 +1,101 @@
+
+.tablelist {
+    font-family:  Arial, sans-serif;
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    background: rgba(50, 50, 50, 0.1);
+    color: white;
+    margin: 40px auto;
+    border-collapse: collapse;
+
+
+
+}
+
+#manufacturercontent{
+    display:none;
+}
+
+.tablelisttr, .tablelistthtr {
+    padding: 15px 10px;
+}
+
+
+
+.tablelisttr:hover {
+    background-image: linear-gradient(rgba(180, 220, 220, 0.3), rgba(70, 70, 70, 0.05), rgba(150, 150, 150, 0), rgba(70, 70, 70, 0.05), rgba(180, 180, 180, 0.3));
+    outline:none;
+    border-radius: 5px;
+    transform: translateY(-5px);
+    transform: scale(1.01,1.02);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.tablelisttd{
+    margin:30px;
+    padding: 15px 10px;
+    text-align:center;
+    border-bottom: 1px solid rgba(100,100, 100, 0.25);;
+}
+
+.tablelistth {
+    margin:30px;
+    padding: 15px 10px;
+    background: rgb(25, 140, 230);
+    color: white;
+    text-shadow: 2px 2px 5px #000000;
+  }
+
+.search {
+    background-image: radial-gradient(dimgrey, rgb(50, 50, 50));
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-family: "Arial Black";
+    padding: 5px 10px;
+    margin-left: 5px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.search:focus {
+    outline:none;
+    border-color: rgb(25, 140, 230);
+    background-image: radial-gradient(dimgrey, rgb(50, 50, 50));
+}
+
+.search:active{
+    outline:none;
+    border-color: dimgrey;
+    background-image: radial-gradient(rgb(18, 104, 170), rgb(25, 140, 230));
+}
+
+@media screen and (max-width: 1000px) {
+    #carstable.tablelist{
+        max-height: 260px;
+        display: block;
+        overflow: auto;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+#carstable.tablelist{
+    display:none;
+}
+#manufacturertable.tablelist{
+        display: block;
+        overflow: auto;
+        max-height: 400px;
+}
+}
+
+
+
+
+
+
+

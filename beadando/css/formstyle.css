@@ -1,0 +1,135 @@
+input[type=text], select{
+    width: 100%;
+}
+
+input[type=number]{
+    width: 40%;
+}
+
+input[type=date]{
+    width: 50%;
+    resize: none;
+}
+button {
+    background-image: radial-gradient(dimgrey, rgb(50, 50, 50));
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-family: "Arial Black";
+    padding: 5px 10px;
+    margin-left: 5px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+button:focus {
+     outline:none;
+     border-color: rgb(25, 140, 230);
+     background-image: radial-gradient(dimgrey, rgb(50, 50, 50));
+ }
+
+button:active {
+    outline:none;
+    border-color: dimgrey;
+    background-image: radial-gradient(rgb(18, 104, 170), rgb(25, 140, 230));
+}
+
+label {
+    color: rgb(220, 220, 220);
+    font-size: 20px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+
+#newDiv {
+    width: 1000px;
+    padding: 20px;
+    margin: auto;
+    max-width: 75%;
+}
+
+.newRow {
+    margin-top:10px;
+}
+
+.newRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.newColumn1 {
+    float: left;
+    width: 30%;
+    margin-top: 5px;
+}
+
+.newColumn2 {
+    float: right;
+    width: 60%;
+    margin-top: 5px;
+}
+
+.formstyle {
+    padding: 15px 20px;
+    border-radius: 5px;
+    resize: vertical;
+    float:right;
+    border: 3px outset transparent;
+    background: rgb(50, 50, 50);
+    color: white;
+
+}
+
+.formstyle:hover, .formstyle:focus {
+
+    border-color: rgb(25, 140, 230);
+    background: darkgrey;
+    outline:none;
+    color: black;
+}
+
+.formstylered,  .formstylered:hover, .formstylered:focus {
+
+    border-color: rgb(230, 56, 74);
+    background: darkgrey;
+    outline:none;
+    color: black;
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .newColumn1, .newColumn2 {
+        width: 100%;
+    }
+    button, input[type=text], select, input[type=number], input[type=date]{
+        float: left;
+    }
+    input[type=number], input[type=date]{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    #newDiv{
+        max-width: 85%;
+    }
+
+    input[type=number], input[type=date]{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #newDiv{
+        max-width: 90%;
+    }
+
+}
+

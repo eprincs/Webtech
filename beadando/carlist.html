@@ -1,0 +1,43 @@
+<script src="js/carlist.js"></script>
+<div id="newDiv">
+
+
+        <div class="newRow" >
+            <div class="newColumn1">
+                    <label id="carname">Carname</label>
+            </div>
+            <div class="newColumn2" id="carcontent">
+                    <input type="text" id="searchCar" placeholder="Type the car's name..." class="formstyle">
+                    <input type="button" value="Search" id="search2" onclick="search2()" class="search">
+                    <input type="button" value="Show all" id="showall2" onclick="createCarsTable()" class="search">
+            </div>
+            <div class="newColumn2" id="manufacturercontent">
+                    <select id="manufacturerSelect" name="color" class="formstyle"  >
+
+                    </select>
+                    <input type="button" value="Search" id="search" onclick="search()" class="search">
+                    <input type="button" value="Show all" id="showall" onclick="createCarsTable()" class="search">
+            </div>
+        </div>
+
+
+
+
+</div>
+<table id="carstable" class="tablelist">
+
+    <tr id="clickableTr" class="clickableTr">
+        <th class="tablelistth">Name</th>
+        <th class="tablelistth">Consumption</th>
+        <th class="tablelistth">Color</th>
+        <th class="tablelistth">Manufacturer</th>
+        <th class="tablelistth">Available</th>
+        <th class="tablelistth">Year</th>
+        <th class="tablelistth">Horsepower</th>
+    </tr>
+
+</table>
+<div id="cards">
+
+</div>
+
